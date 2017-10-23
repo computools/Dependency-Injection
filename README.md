@@ -3,7 +3,7 @@
 ## Installing
 
 ```sh
-$ npm install --save @computools/di
+$ npm install --save nodejs-di
 ```
 
 ## License

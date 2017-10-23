@@ -1,0 +1,24 @@
+{
+  "name" : "calc",
+  "objects" :
+    {
+      "mult" : {
+        "resource": {"path" : "app/mult", "className" : "Mult"},
+        "provider" : "prototype"
+      },
+      "plus" : {
+        "resource": {"path" : "app/plus", "className" : "Plus"},
+        "provider" : "prototype"
+      },
+      "calc": {
+        "resource": {"path" : "app/calc", "className" : "Calc"},
+        "provider" : "singleton",
+        "dependency" :{
+          "plusWorker" : "plus",
+          "multWorker" : "mult"
+        }
+      }
+
+    }
+}
+

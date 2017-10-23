@@ -1,0 +1,31 @@
+{
+  "name" : "test",
+  "objects" :
+    {
+      "test1": {
+        "resource": {"path" : "src/test1", "className" : "Test1"},
+        "provider" : "singleton",
+        "dependency" :{
+          "property1" : "test2"
+        }
+      },
+
+      "test2" : {
+        "resource": {"path" : "src/test2", "className" : "Test2"},
+        "provider" : "prototype",
+        "dependency" :{
+          "property1" : "test3"
+        }
+      },
+
+      "test3" : {
+        "resource": {"path" : "src/test3", "className" : "Test3"},
+        "provider" : "singleton",
+        "dependency" :{
+          "property1" : "test1"
+        }
+      }
+
+    }
+}
+

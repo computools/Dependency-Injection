@@ -1,0 +1,21 @@
+{
+  "name": "nodejs-di",
+  "version": "0.9.6",
+  "description": "Dependency injection",
+  "main": "index.js",
+  "scripts": {
+      "test": "mocha --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/computools/di.git"
+  },
+  "author": "Computools Software",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "^4.1.1",
+    "chai-http": "^3.0.0",
+    "mocha": "^3.5.0"
+  }
+}
